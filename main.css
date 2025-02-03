@@ -1,0 +1,375 @@
+/* Подключаем шрифт Montserrat ко всему сайту */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5e1;
+    color: #333;
+    text-align: center;
+}
+
+/* Навигационное меню */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #222;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8bc34a;
+}
+
+/* Заголовки */
+.main-title, h1, h2 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Контейнер с работами */
+
+/* === Подключение шрифта Montserrat === */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #333;
+    background: #f8f5e1; /* Светлый фон */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* === Навигационное меню === */
+header {
+    margin-top: 30px; /* Отступ сверху */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: transparent; /* Фон меню прозрачный */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000; /* Чёрный цвет текста */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #62aa2a; /* Цвет при наведении */
+}
+
+/* Логотип в меню */
+.nav-logo {
+    height: 40px;
+    display: block;
+}
+
+/* === Заголовки === */
+.main-title, h1, h2 {
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+/* === Блок с работами === */
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.work-description {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* === Стили для страницы "Контакты" === */
+.contacts-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contacts-text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contacts-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Оформление ссылок в контактах */
+.contacts-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contacts-info a:hover {
+    text-decoration: underline;
+}
+
+/* === Стили для ссылок со стрелками === */
+.arrow-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.arrow-link:hover {
+    color: green;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.arrow-link:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* === Галерея изображений === */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 150px;
+    border-radius: 5px;
+}
+/* === Подключение шрифта Montserrat === */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #333;
+    background: #f8f5e1; /* Светлый фон */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* === Навигационное меню === */
+header {
+    margin-top: 30px; /* Отступ сверху */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* Центрируем меню */
+    padding: 10px 0;
+    background-color: #f8f5e1;  /* Фон меню */
+    position: relative;
+    left: -20px; /* Двигаем меню чуть левее, подбирай нужное значение */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* === Навигационное меню === */
+nav ul li a {
+    font-size: 18px;  /* Увеличенный размер шрифта */
+    font-weight: 400; /* Обычное начертание (не жирное) */
+    text-decoration: none;
+    color: #000;  /* Чёрный цвет текста */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #62aa2a; /* Цвет при наведении */
+}
+
+/* Логотип в меню */
+.nav-logo {
+    height: 40px;
+    display: block;
+}
+
+/* === Заголовки === */
+.main-title, h1, h2 {
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Текст под заголовком */
+.main-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Обычный текст (абзацы, списки) */
+p, li {
+    font-weight: 400;
+}
+
+/* === Блок с работами === */
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.work-description {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* === Стили для страницы "Контакты" === */
+.contacts-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contacts-text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contacts-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Оформление ссылок в контактах */
+.contacts-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contacts-info a:hover {
+    text-decoration: underline;
+}
+
+/* === Стили для ссылок со стрелками === */
+.arrow-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.arrow-link:hover {
+    color: green;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.arrow-link:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* === Галерея изображений === */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+
+.main-title {
+    font-size: 60px;         /* Размер текста */
+    font-weight: 600;        /* Жирность */
+    text-transform: uppercase;
+    margin-left: 20px;       /* Отступ слева (примерно 2 см) */
+    margin-top: 80px;        /* Отступ сверху (примерно 4-5 см от меню) */
+    text-align: left;        /* Выравнивание влево */
+}
+
+.main-description {
+    font-size: 16px;         /* Размер описания */
+    font-weight: 400;        /* Обычный вес */
+    margin-left: 76px;       /* Отступ слева (такой же, как у заголовка) */
+    max-width: 650px;        /* Ограничение по ширине (примерно под ширину заголовка) */
+    line-height: 1.4;        /* Межстрочный интервал */
+    text-align: left;
+}
+
+.header {
+    display: flex; /* Используем флексбокс для выравнивания элементов */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    margin-top: 120px;
+    margin-left: 76px;
+}
+
+.main-title {
+    margin: 0; /* Убираем отступы от заголовка */
+}
+
+.join-btn {
+    background-color: #62aa3d; /* Задаём зелёный фон */
+    color: white; /* Белый цвет текста */
+    padding: 15px 15px; /* Отступы внутри кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 15px; /* Закругляем углы */
+    text-align: center; /* Центрируем текст */
+}
+
+.join-btn:hover {
+    background-color: #487922; /* Тёмно-зелёный цвет при наведении */
+}
