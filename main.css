@@ -234,3 +234,11 @@ nav ul li a:hover {
 .footer p {
     margin: 0;
 }
+
+.about, .works {
+    font-size: 22px; /* Увеличение текста */
+    font-weight: 500;
+    text-align: left; /* Выравнивание влево */
+    margin-left: 76px; /* Подвигать влево (как у описания) */
+    margin-top: 40px; /* Отступ вниз */
+}
