@@ -31,30 +31,8 @@ nav ul li a {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: #000; /* Чёрный цвет текста */
+    color: #000;
     transition: color 0.3s;
-}
-
-
-/* === Стили для ссылок со стрелками === */
-.arrow-link {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.arrow-link:hover {
-    color: green;
-}
-
-.arrow {
-    transition: transform 0.3s;
-}
-
-.arrow-link:hover .arrow {
-    transform: translateX(5px);
 }
 
 /* === Галерея изображений === */
@@ -65,7 +43,7 @@ nav ul li a {
 
 .image-gallery img {
     width: 150px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 
@@ -91,26 +69,29 @@ nav ul li a:hover {
 /* === Блок с работами === */
 .work-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    max-width: 400px;
-    margin-left: 76px;
-    margin-right: auto;
-    border-radius: 30px;
+    flex-direction: row; /* Ряд: картинка слева, текст справа */
+    align-items: center; /* Выравнивание по центру */
+    gap: 20px; /* Отступ между картинкой и текстом */
+    max-width: 600px; /* Подгони под дизайн */
+    margin: 20px auto; /* Центрирование блока */
 }
 
 .work-image {
-    width: 100%;
-    max-width: 400px;
+    width: 40%;
+    max-width: 250px;
     border-radius: 15px;
-    margin-left: 76px;
+    margin-left: -260px; /
 }
 
 .work-description {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 400;
+    width: 60%;
+    text-align: left;
+}
+
+.work-title {
+    font-size: 32px;
+    margin-left: -890px;
+    margin-bottom: 70px;
 }
 
 /* === Стили для страницы "Контакты" === */
@@ -162,17 +143,15 @@ nav ul li a:hover {
     transform: translateX(5px);
 }
 
-/* === Галерея изображений === */
 .image-gallery {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Выстраиваем картинки в ряд */
+    gap: 20px; /* Отступ между картинками */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    align-items: center; /* Выравнивание по вертикали */
+    flex-wrap: wrap; /* Позволяет картинкам переноситься на новую строку, если они не помещаются */
+    margin-left: 600px;
 }
 
-.image-gallery img {
-    width: 310px;
-    border-radius: 5px;
-    margin-left: 1100px;
-}
 
 
 .main-title {
@@ -191,6 +170,7 @@ nav ul li a:hover {
     max-width: 650px;
     line-height: 1.4;
     text-align: left;
+    margin-bottom: 150px;
 }
 
 .header {
@@ -222,23 +202,52 @@ nav ul li a:hover {
 /* Подвал */
 .footer {
     width: 100%;
-    background-color: #222; /* Тёмно-серый цвет */
+    background-color: #222;
     color: white;
-    text-align: left; /* Выравниваем текст влево */
-    padding: 10px 0; /* Отступы внутри */
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    text-align: left;
+    padding: 10px 0;
+    position: sticky;
 }
 
 .footer p {
     margin: 0;
 }
 
-.about, .works {
-    font-size: 22px; /* Увеличение текста */
-    font-weight: 500;
-    text-align: left; /* Выравнивание влево */
-    margin-left: 76px; /* Подвигать влево (как у описания) */
-    margin-top: 40px; /* Отступ вниз */
+.info-section {
+    margin-bottom: 30px; /* Отступ между секциями */
+    text-align: left; /* Выравнивание текста слева */
+}
+
+.info-section a {
+    font-size: 25px; /* Размер шрифта для ссылок */
+    font-weight: 600; /* Жирный шрифт */
+    color: #333; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s;
+    margin-left: 76px;
+}
+
+.info-section p {
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 400; /* Нормальное начертание */
+    line-height: 1.5; /* Высота строки */
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    margin-left: 460px;
+}
+
+.info-section a:hover {
+    color: #62aa2a; /* Цвет при наведении */
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.image-gallery img {
+    width: 100%; /* Ширина изображений */
+    max-width: 300px; /* Максимальная ширина изображений */
+    border-radius: 10px; /* Закругленные углы */
 }
